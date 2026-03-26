@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="icon" href="img/vista_info.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="btn">
+            <a href="index.html">
+  <button class="icon-btn">
+    <img src="img/vista_messenger.ico" alt="" height="20" width="20">Inicio</button>
+</a>
+<a href="projetos.html">
+  <button class="icon-btn">
+    <img src="img/vista_search_globe.ico" alt="" height="20" width="20">Projetos</button>
+</a>
+<a href="contato.html">
+  <button class="icon-btn">
+    <img src="img/vista_pc_1.ico" alt="" height="20" width="20">Contato</button>
+</a>
+
+<div class="msc">
+  <button class="icon-btn" id="play-btn"><img src="img/itunes1.ico" alt="">Tocar Música</button>
+</div>
+
+<audio id="musica" loop>
+  <source src="audio/scizzie - aquatic ambience - scizzie (youtube).mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const audio = document.getElementById("musica");
+  const playBtn = document.getElementById("play-btn");
+
+  playBtn.addEventListener("click", () => {
+    audio.volume = 0.2; 
+    audio.play();       
+    playBtn.style.display = "none";
+  });
+</script>
+        </div>
+    </header>
+    <section class="banner">
+      <h1>Mateus Rodriguespédia</h1> <img height="70" width="70" src="img/vista_netcenter.ico" alt="">
+    </section>
+    <br>
+    <br>
+    <div class="main">
+      <div class="lista">
+      <section class="left">
+      <h1>Interesses e hobbies</h1>
+      <ul>
+        <li>Minha namorada linda</li>
+        <li>Xadrez</li>
+        <li>Programação</li>
+        <li>Estudo de humanas no geral</li>
+        <li>Basquete</li>
+        <li>Ler</li>
+        <li>Escutar música</li>
+        <li>Línguas estrangeiras</li>
+        <li>Edição de vídeo</li>
+        <li>Jogar rpg(principalente castle crashers mas rpg de mesa tb é muito bom)</li>
+      </ul>
+    </section>
+    </div>
+    <section class="prof">
+      <h1>Minha história</h1>
+      <p>Nasci no dia 9 de abril de 2010. Aos 6 anos, entrei no SESI, mas quando era mais novo não tinha muito interesse pela escola. Com o tempo, as coisas mudaram e hoje em dia, já estou trabalhando enquanto ainda estou no segundo ano, quem diria? E o mais curioso é que passei a gostar de estudar. </p>
+      <br>
+      <h1>Carreira</h1>
+        <p>Atualmente, atuo como professor de inglês na West, desenvolvendo competências em comunicação, didática e relacionamento interpessoal. Paralelamente, trabalho como editor, aplicando habilidades de organização, atenção aos detalhes e criatividade na produção e revisão de conteúdos.</p>
+        <br>
+        <h1>Curiosidades</h1>
+        <ul>
+          <li>Sei os nomes e reconheço as bandeiras dos 196 países oficiais do mundo</li>
+          <li>Começarei a dar aulas de inglês na West</li>
+          <li>sou fã número 1 do iron maiden</li>
+          <li>Já consegui atingir 1800 de rating no chess.com</li>
+        </ul>
+        </section>
+        <div class="right">
+          <section class="status">
+          <p id="status-musica">🎵 Música parada</p>
+        <script>
+          audio.addEventListener("play", () => {
+  document.getElementById("status-musica").innerText = "🎵 Tocando...";});
+        </script>
+        </section>
+        <section class="nivel">
+          <h1>Skills</h1>
+          <p>HTML</p>
+          <div class="barra"><div style="width: 80%"></div></div>
+          
+          <p>CSS</p>
+          <div class="barra"><div style="width: 70%"></div></div>
+
+          <p>JS</p>
+          <div class="barra"><div style="width: 20%;"></div></div>
+        </section>
+        </div>
+
+        
+</body>
+</html>

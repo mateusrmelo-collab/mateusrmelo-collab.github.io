@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="icon" href="img/vista_pc_1.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="btn">
+            <a href="index.html">
+  <button class="icon-btn">
+    <img src="img/vista_messenger.ico" alt="" height="20" width="20">Inicio</button>
+</a>
+<a href="projetos.html">
+  <button class="icon-btn">
+    <img src="img/vista_search_globe.ico" alt="" height="20" width="20">Projetos</button>
+</a>
+<a href="sobre.html">
+  <button class="icon-btn">
+    <img src="img/vista_info.ico" alt="" height="20" width="20">Sobre mim</button>
+</a>
+
+<div class="msc">
+  <button class="icon-btn" id="play-btn"><img src="img/itunes1.ico" alt="">Tocar Música</button>
+</div>
+
+<audio id="musica" loop>
+  <source src="audio/wii u - mii maker (slowed reverb + bird sounds) ♡ - r 𖤐 (youtube).mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const audio = document.getElementById("musica");
+  const playBtn = document.getElementById("play-btn");
+
+  playBtn.addEventListener("click", () => {
+    audio.volume = 0.2; 
+    audio.play();       
+    playBtn.style.display = "none";
+  });
+</script>
+
+        </div>
+    </header>
+
+    <div class="right">
+          <section class="status">
+          <p id="status-musica">🎵 Música parada</p>
+        <script>
+          audio.addEventListener("play", () => {
+  document.getElementById("status-musica").innerText = "🎵 Tocando...";});
+        </script>
+        </section>
+        </div>
+
+    <div class="box">
+        <section class="caixa">
+        <h1>Informações para contato</h1>
+        <h2> Telefone</h2>
+        <p>(12)34567-8910</p>
+        <h2>Email</h2>
+        <p>Dev_matt@gmail.com</p>
+        <h2>Redes sociais</h2>
+        <div class="botoes">
+            <a href="https://www.instagram.com/im_still_alive63/"><button class="icon-btn"><img src="img/icons8-instagram-48.png" alt="">Instagram</button></a>
+        <a href="https://github.com/mateusrmelo-collab"><button class="icon-btn"><img src="img/icons8-github-50.png" alt="">Github</button></a>
+        <a href="https://www.chess.com/member/mateusruimnoxadrez93465"><button class="icon-btn"><img src="img/icons8-chess-com-48.png" alt="">Chess.com</button></a>
+        </div>
+        
+    </section>
+    </div>
+    
+</body>
+</html>

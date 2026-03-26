@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myself</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/vista_messenger.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+            <div class="logo">
+                <h1>Minha vida</h1>
+            </div>
+            <div class="p">
+                <p>Saiba tudo e mais um pouco sobre a pessoa mais foda de Paraguaçu Paulista</p> 
+            </div>
+    </header>
+    <section>
+        <div class="btn">
+            <a href="sobre.html">
+  <button class="icon-btn">
+    <img src="img/vista_info.ico" alt="" height="20" width="20">Sobre mim</button>
+</a>
+<a href="projetos.html">
+  <button class="icon-btn">
+    <img src="img/vista_search_globe.ico" alt="" height="20" width="20">Projetos</button>
+</a>
+<a href="contato.html">
+  <button class="icon-btn">
+    <img src="img/vista_pc_1.ico" alt="" height="20" width="20">Contato</button>
+</a>
+
+        </div>
+    </section>
+    <section>
+        <div class="card">
+            <div class="img">
+                <img height="300" width="300" src="img/IMG_20260108_222845_060.webp" alt="em breve">
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+    </section>
+    <section>
+        <div class="info">
+                <h2>Mateus Rodrigues</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae qui corporis inventore. Repellat commodi aperiam natus non voluptas error autem ex cumque ut hic, mollitia, quisquam, eos ratione iste possimus.</p>
+            <button class="audio" id="play-btn">Tocar Música</button>
+
+    <audio id="musica" loop>
+  <source src="audio/the world we should have gotten  frutiger aero playlist - musical girl (youtube).mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const audio = document.getElementById("musica");
+  const playBtn = document.getElementById("play-btn");
+
+  playBtn.addEventListener("click", () => {
+    audio.volume = 0.2; 
+    audio.play();       
+    playBtn.style.display = "none";
+    audio.currentTime = 2 * 60 + 34;
+  });
+</script>
+        </div>
+            
+    </section>
+    <footer class="footer">
+        <div class="marca">
+            <h3>Mateus fodão © <s>2026</s>(2000s) | Todos os direitos reservados</h3>
+        </div>
+  
+</footer>
+</body>
+</html>

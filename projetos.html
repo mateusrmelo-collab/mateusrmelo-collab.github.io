@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="css/projetos.css">
+    <link rel="icon" href="img/vista_search_globe.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="btn">
+            <a href="index.html">
+  <button class="icon-btn">
+    <img src="img/vista_messenger.ico" alt="" height="20" width="20">Inicio</button>
+</a>
+<a href="sobre.html">
+  <button class="icon-btn">
+    <img src="img/vista_info.ico" alt="" height="20" width="20">Sobre mim</button>
+</a>
+<a href="contato.html">
+  <button class="icon-btn">
+    <img src="img/vista_pc_1.ico" alt="" height="20" width="20">Contato</button>
+</a>
+
+<div class="msc">
+  <button class="icon-btn" id="play-btn"><img src="img/itunes1.ico" alt="">Tocar Música</button>
+</div>
+
+
+<audio id="musica" loop>
+  <source src="audio/wii u - mii maker (slowed reverb + bird sounds) ♡ - r 𖤐 (youtube).mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const audio = document.getElementById("musica");
+  const playBtn = document.getElementById("play-btn");
+
+  playBtn.addEventListener("click", () => {
+    audio.volume = 0.2; 
+    audio.play();       
+    playBtn.style.display = "none";
+  });
+</script>
+
+        </div>
+    </header>
+
+    <div class="quadro">
+        <section class="banner">
+        <h1>Meus queridos projetos</h1>
+        <h3>OBS: Meus projetos são ruins</h3>
+    </section>
+    </div>
+
+    <div class="right">
+          <section class="status">
+          <h4 id="status-musica">🎵 Música parada</h4>
+        <script>
+          audio.addEventListener("play", () => {
+  document.getElementById("status-musica").innerText = "🎵 Tocando...";});
+        </script>
+        </section>
+        </div>
+    
+    <div class="caixas">
+        <div class="card">
+            <h1>Rufino notícias</h1>
+            <p>Melhor que a globo</p>
+            <img src="img/desenho-de-logotipo-de-noticias-de-ultima-hora_23-2151157248.avif" alt="">
+        </div>
+        <div class="card">
+            <h1>Dançante</h1>
+            <p>Primeira tentativa de animação no css(print do projeto)</p>
+            <img height="200" width="200" src="img/Captura de tela 2026-03-26 001900.png" alt="">
+        </div>
+        <div class="card">
+            <h1>See my flag</h1>
+            <p>Site com bandeiras de todo tipo, onde todos poderiam adicionar suas bandeiras(logo do projeto)</p>
+            <img src="img/flag.jpg" alt="">
+        </div>
+        <div class="card">
+            <h1>Em andamento</h1>
+            <p>Por enquanto não há nada aqui</p>
+            <img src="img/vista_warning.ico" alt="">
+        </div>
+        <div class="card">
+            <h1>Em andamento</h1>
+            <p>Pelo visto aqui também não tem nada...</p>
+            <img src="img/vista_warning.ico" alt="">
+        </div>
+    </div>
+</body>
+</html>
