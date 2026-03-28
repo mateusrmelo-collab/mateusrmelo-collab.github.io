@@ -5,7 +5,9 @@
 }
 
 body {
-  background: url(HD-wallpaper-windows-vista-technoogy-abstract-blue.jpg) no-repeat center center;
+  background-image: url('../img/wall.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;       
   display: flex;
