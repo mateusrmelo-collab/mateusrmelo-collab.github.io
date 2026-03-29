@@ -216,9 +216,99 @@ footer {
 
 .vista-erro {
   display: none;
-  color: #c00; /* vermelho clássico */
+  color: #c00; 
   font-family: "Segoe UI", Tahoma, sans-serif;
   font-size: 14px;
   margin-top: 8px;
   text-align: left;
+}
+
+@media (max-width: 600px){
+
+  body{
+    background-attachment: scroll; 
+  }
+
+  .conteudo{
+    gap: 15px;
+    padding: 20px 10px;
+  }
+
+  .caixa{
+    width: 90%;
+    max-width: 280px;
+    height: auto;
+    aspect-ratio: 1/1; 
+  }
+
+  .box{
+    padding: 10px;
+  }
+
+  input{
+    width: 90%;
+    max-width: 260px;
+    font-size: 16px; 
+  }
+
+  .senha-container{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .senha-container input[type="password"]{
+    width: 80%;
+    max-width: 220px;
+  }
+
+  .senha-container .btn-vista{
+    width: 40px;
+    height: 40px;
+  }
+
+  h1{
+    font-size: 22px;
+    padding: 0 10px;
+  }
+
+  footer{
+    height: 80px;
+  }
+
+  .btn-footer{
+    width: 50px;
+    height: 35px;
+  }
+
+  .logo{
+    position: static;
+    transform: none;
+    margin-top: 10px;
+  }
+
+  .btn1{
+    position: static;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 400px){
+
+  h1{
+    font-size: 18px;
+  }
+
+  input{
+    font-size: 14px;
+  }
+
+  .senha-container input[type="password"]{
+    width: 70%;
+  }
+
+  .btn-footer{
+    width: 45px;
+    height: 32px;
+  }
 }

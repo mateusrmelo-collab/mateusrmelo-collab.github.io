@@ -182,8 +182,93 @@ a{
     justify-content: center;
 }
 
+@media (max-width: 600px){
 
+    .btn{
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 10px;
+    }
 
+    .btn button{
+        width: 90%;
+        max-width: 250px;
+    }
 
+    .icon-btn{
+        width: 90%;
+        justify-content: center;
+    }
 
+    .banner{
+        padding: 15px;
+    }
 
+    .banner h1{
+        font-size: 22px;
+    }
+
+    .banner h3{
+        font-size: 14px;
+    }
+
+    .caixas{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-top: 40px;
+    }
+
+    .card{
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .card img{
+        width: 120px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 14px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .status{
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 400px){
+
+    .btn button{
+        width: 100%;
+    }
+
+    .icon-btn{
+        width: 100%;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .card img{
+        width: 100px;
+    }
+
+    .banner h1{
+        font-size: 18px;
+    }
+
+    .banner h3{
+        font-size: 12px;
+    }
+}

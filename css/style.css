@@ -231,3 +231,82 @@ a{
 .img img{
     border: 5px solid rgba(67,233,123,0.5);
 }
+
+
+@media (max-width: 600px){
+
+    body{
+        background-attachment: scroll; 
+    }
+
+    .btn{
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+    }
+
+    .btn button{
+        width: 90%;
+        max-width: 250px;
+    }
+
+    .icon-btn{
+        width: 90%;
+        justify-content: center;
+    }
+
+    .img{
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+
+    .img img{
+        width: 80%;
+        max-width: 250px;
+    }
+
+    h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    p{
+        font-size: 14px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .marca h3{
+        font-size: 14px;
+        animation-duration: 20s;
+    }
+
+    .footer{
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .audio{
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px){
+
+    .btn button{
+        width: 100%;
+    }
+
+    .img img{
+        width: 100%;
+    }
+
+    .marca h3{
+        font-size: 12px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+}

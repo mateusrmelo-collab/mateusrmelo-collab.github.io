@@ -237,3 +237,98 @@ h1{
     justify-content: center;
 }
 
+
+@media (max-width: 600px){
+
+    .btn{
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .btn button{
+        width: 90%;
+        max-width: 250px;
+    }
+
+    .icon-btn{
+        width: 90%;
+        justify-content: center;
+    }
+
+    .banner{
+        height: auto;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .main{
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .left{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .prof{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .right{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .lista{
+        margin-left: 10px;
+    }
+
+    h1{
+        font-size: 22px;
+    }
+
+    .prof h1{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .barra{
+        height: 8px;
+    }
+}
+
+@media (max-width: 400px){
+
+    .btn button{
+        width: 100%;
+    }
+
+    .icon-btn{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+
+    .prof h1{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 13px;
+    }
+
+    .right{
+        padding: 8px;
+    }
+}
