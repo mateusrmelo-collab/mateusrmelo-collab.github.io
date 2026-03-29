@@ -15,14 +15,15 @@
   </div>
 
   <h1>Mateus foda</h1>
-  <form action="index.html">
+  <form onsubmit="return validarSenha()">
   <div class="senha-container">
-    <input type="password" placeholder="Senha">
+    <input type="password" id="senha" placeholder="Senha">
     <button type="submit" class="btn-vista"><img height="25" width="28" src="img/seta (1).png" alt=""></button>
   </div>
 </form>
-
+<div id="mensagem-erro" class="vista-erro">Senha incorreta. Tente novamente.</div>
 </div>
+<script src="valida.js"></script>
 
 <div class="footer">
     <footer>
