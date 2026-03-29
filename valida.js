@@ -4,7 +4,7 @@ function validarSenha() {
   const mensagemErro = document.getElementById("mensagem-erro");
 
   if (senhaDigitada === senhaCorreta) {
-    window.location.href = "index.html"; 
+    window.location.href = "inicio.html"; 
     return false;
   } else {
     const audio = new Audio("../audio/0329.mp4"); 

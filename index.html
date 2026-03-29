@@ -3,75 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myself</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/vista_messenger.ico" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header>
-            <div class="logo">
-                <h1>Minha vida</h1>
-            </div>
-            <div class="p">
-                <p>Saiba tudo e mais um pouco sobre a pessoa mais foda de Paraguaçu Paulista</p> 
-            </div>
-    </header>
-    <section>
-        <div class="btn">
-            <a href="sobre.html">
-  <button class="icon-btn">
-    <img src="img/vista_info.ico" alt="" height="20" width="20">Sobre mim</button>
-</a>
-<a href="projetos.html">
-  <button class="icon-btn">
-    <img src="img/vista_search_globe.ico" alt="" height="20" width="20">Projetos</button>
-</a>
-<a href="contato.html">
-  <button class="icon-btn">
-    <img src="img/vista_pc_1.ico" alt="" height="20" width="20">Contato</button>
-</a>
+    <div class="conteudo">
+  <div class="caixa">
+    <div class="box">
+      <img src="img/IMG_20260108_222845_060.webp">
+    </div>
+  </div>
 
-        </div>
-    </section>
-    <section>
-        <div class="card">
-            <div class="img">
-                <img height="300" width="300" src="img/IMG_20260108_222845_060.webp" alt="em breve">
-            </div>
-            <br>
-            <br>
-            <br>
-        </div>
-    </section>
-    <section>
-        <div class="info">
-                <h2>Mateus Rodrigues</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae qui corporis inventore. Repellat commodi aperiam natus non voluptas error autem ex cumque ut hic, mollitia, quisquam, eos ratione iste possimus.</p>
-            <button class="audio" id="play-btn">Tocar Música</button>
+  <h1>Mateus foda</h1>
+  <form onsubmit="return validarSenha()">
+  <div class="senha-container">
+    <input type="password" id="senha" placeholder="Senha">
+    <button type="submit" class="btn-vista"><img height="25" width="28" src="img/seta (1).png" alt=""></button>
+  </div>
+</form>
+<div id="mensagem-erro" class="vista-erro">Senha incorreta. Tente novamente.</div>
+</div>
+<script src="valida.js"></script>
 
-    <audio id="musica" loop>
-  <source src="audio/the world we should have gotten  frutiger aero playlist - musical girl (youtube).mp3" type="audio/mpeg">
-</audio>
-
-<script>
-  const audio = document.getElementById("musica");
-  const playBtn = document.getElementById("play-btn");
-
-  playBtn.addEventListener("click", () => {
-    audio.volume = 0.2; 
-    audio.play();       
-    playBtn.style.display = "none";
-    audio.currentTime = 2 * 60 + 34;
-  });
-</script>
+<div class="footer">
+    <footer>
+        <div class="btn1">
+            <a href=""><button class="btn-footer"><img height="35" width="35" src="img/vista_accessibility.ico" alt=""></button></a>
         </div>
-            
-    </section>
-    <footer class="footer">
-        <div class="marca">
-            <h3>Mateus fodão © <s>2026</s>(2000s) | Todos os direitos reservados</h3>
+        <div class="logo">
+            <img src="img/Windows_7_Ultimate_logo.png" alt="">
         </div>
-  
-</footer>
+    </footer>
+</div>
 </body>
 </html>
