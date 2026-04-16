@@ -38,9 +38,6 @@
             <div class="img">
                 <img height="300" width="300" src="img/download (2).png" alt="em breve">
             </div>
-            <br>
-            <br>
-            <br>
         </div>
     </section>
     <section>
@@ -66,6 +63,22 @@
 </script>
         </div>
             
+    </section>
+    <section class="dark">
+        <h2>
+            Alterar estilo
+        </h2>
+        <label class="switch">
+            <input type="checkbox" id="alternar">
+            <span class="slider"></span>
+        </label>
+<script>
+    const toggle = document.getElementById("alternar");
+
+    toggle.addEventListener("change", () => {
+    document.body.classList.toggle("modo-troll");
+    });
+</script>
     </section>
     <footer class="footer">
         <div class="marca">
