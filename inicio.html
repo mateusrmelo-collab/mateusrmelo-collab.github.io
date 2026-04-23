@@ -42,8 +42,8 @@
     </section>
     <section>
         <div class="info">
-                <h2>Mateus Rodrigues</h2>
-            <p>Futuro desenvolvedor full stack.</p>
+                <h2 id="kkk">Mateus Rodrigues</h2>
+            <p id="ap">Futuro dev full stack.</p>
             <button class="audio" id="play-btn">Tocar Música</button>
 
     <audio id="musica" loop>
@@ -56,9 +56,9 @@
 
   playBtn.addEventListener("click", () => {
     audio.volume = 0.2; 
+    audio.currentTime = 2 * 60 + 34;
     audio.play();       
     playBtn.style.display = "none";
-    audio.currentTime = 2 * 60 + 34;
   });
 </script>
         </div>
