@@ -162,6 +162,80 @@ h1{
     background: linear-gradient(135deg, #3c81bd, #43e97b);
 }
 
+body.modo-troll {
+  background: url(../img/upscalemedia-transformed.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+.modo-troll  {
+    background: linear-gradient(135deg, #940303, #f02c12);
+}
+
+.modo-troll .status{
+    border: 3px #f11c1c solid;
+}
+
+.modo-troll .caixa{
+    background:rgba(59, 58, 58, 0.5);
+    border: 2px solid rgb(236, 46, 46);
+    backdrop-filter: blur(3px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+body.modo-troll::before {
+  opacity: 0.6;
+}
+
+.modo-troll *{
+    backdrop-filter: none;
+    border-color: crimson;
+}
+
+.card, .info, .btn, header {
+  transition: all 0.6s;
+}
+
+.modo-troll button {
+  background: linear-gradient(90deg, #1a0000, #3b0000);
+  color: #ffe6e6;
+  border: 1px solid crimson;
+}
+
+.modo-troll button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px crimson, 0 0 40px darkred;
+}
+
+.modo-troll .icon-btn {
+    animation: brilhadola 2s infinite;
+}
+
+@keyframes brilhadola {
+  0% {
+    box-shadow: 0 0 10px #e61c1c;
+  }
+  50% {
+    box-shadow: 0 0 25px #7a0101, 0 0 40px #e20707;
+  }
+  100% {
+    box-shadow: 0 0 10px #e61c1c;
+  }
+}
+
+.modo-troll .icon-btn img{
+    content: url(../img/rem.png);
+}
+
+.modo-troll .card img{
+    border-color: #7a0101;
+}
+
 @keyframes flutuar {
   0% {
     transform: translateY(0px);

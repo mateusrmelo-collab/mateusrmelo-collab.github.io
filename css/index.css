@@ -312,3 +312,36 @@ footer {
     height: 32px;
   }
 }
+
+body.modo-troll {
+  background-image: url('https://i.pinimg.com/1200x/f4/e1/dc/f4e1dcfe9e3f30a1c6061c8a0f653e55.jpg');
+}
+
+.modo-troll .senha-container .btn-vista {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;      
+  border: 1.5px solid rgba(255,255,255,0.6);
+  background: linear-gradient(to bottom, #e62828, #f00404, #850505);
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,0.6),
+    inset 0 -2px 4px rgba(0,0,0,0.2),
+    0 2px 5px rgba(0,0,0,0.3);
+  cursor: pointer;
+  font-size: 18px;
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+  padding: 0;
+}
+.modo-troll .senha-container .btn-vista:hover {
+  background: linear-gradient(to bottom, rgba(233, 98, 98, 0.4), rgba(212, 38, 38, 0.7), rgba(248, 2, 2, 0.7));
+  backdrop-filter: blur(4px);
+  box-shadow:
+    inset 0 2px 6px rgba(255,255,255,0.5),
+    inset 0 -2px 4px rgba(0,0,0,0.25),
+    0 4px 8px rgba(0,0,0,0.35);
+  transform: scale(1.4);
+}

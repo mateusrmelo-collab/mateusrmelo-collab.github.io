@@ -350,6 +350,10 @@ body.modo-troll::before {
     animation: brilhadola 2s infinite;
 }
 
+.modo-troll .card img{
+  content: url(https://i.pinimg.com/736x/0f/51/a7/0f51a75955ebf3af3928d53a979785c2.jpg);
+}
+
 @keyframes brilhadola {
   0% {
     box-shadow: 0 0 10px #e61c1c;
@@ -363,7 +367,7 @@ body.modo-troll::before {
 }
 
 .modo-troll .icon-btn img{
-    content: url(https://i.pinimg.com/1200x/37/e0/03/37e003733bbc1b32c967d945f350b5f0.jpg);
+    content: url(../img/rem.png);
 }
 
 .modo-troll .card img{

@@ -183,6 +183,84 @@ a{
     justify-content: center;
 }
 
+body.modo-troll {
+  background: url(https://i.pinimg.com/736x/0c/ae/c0/0caec0f9507ea415831c507e67bb7288.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+.modo-troll .card{
+    background: none;
+    backdrop-filter: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    border: none;
+}
+
+body.modo-troll .card > h1,
+body.modo-troll .card p {
+    background: linear-gradient(135deg, #e92222, #f02c12);
+}
+
+p{
+    text-align: center;
+}
+
+body.modo-troll::before {
+  opacity: 0.6;
+}
+
+.modo-troll *{
+    backdrop-filter: none;
+    border-color: crimson;
+}
+
+.modo-troll .card{
+    border: 2px solid red;
+}
+
+.modo-troll *{
+    color: white;
+}
+
+.modo-troll button {
+  background: linear-gradient(90deg, #1a0000, #3b0000);
+  color: #ffe6e6;
+  border: 1px solid crimson;
+}
+
+.modo-troll button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px crimson, 0 0 40px darkred;
+}
+
+.modo-troll .icon-btn {
+    animation: brilhadola 2s infinite;
+}
+
+@keyframes brilhadola {
+  0% {
+    box-shadow: 0 0 10px #e61c1c;
+  }
+  50% {
+    box-shadow: 0 0 25px #7a0101, 0 0 40px #e20707;
+  }
+  100% {
+    box-shadow: 0 0 10px #e61c1c;
+  }
+}
+
+.modo-troll .icon-btn img{
+    content: url(../img/rem.png);
+}
+
+.modo-troll .card img{
+    border-color: #7a0101;
+}
+
 @media (max-width: 600px){
 
     .btn{
