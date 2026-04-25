@@ -163,14 +163,18 @@ h1{
 }
 
 body.modo-troll {
-  background: url(../img/upscalemedia-transformed.jpeg);
+  background: url(https://i.pinimg.com/originals/19/68/80/19688082f5ca9c9c69c383e4831405b3.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: white;
 }
 
-.modo-troll  {
+.modo-troll .status p{
+    color: white;
+}
+
+.modo-troll h1 {
     background: linear-gradient(135deg, #940303, #f02c12);
 }
 
@@ -195,10 +199,6 @@ body.modo-troll::before {
 .modo-troll *{
     backdrop-filter: none;
     border-color: crimson;
-}
-
-.card, .info, .btn, header {
-  transition: all 0.6s;
 }
 
 .modo-troll button {
